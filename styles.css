@@ -1,6 +1,7 @@
 .lightbox{
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
     width: 640px;
     margin: auto auto;
@@ -12,7 +13,7 @@
     right:0;
 }
 .overlay{
-    display: flex;
+    display: none;
     justify-content: center;
     position:fixed;
     width: 100vw;
@@ -21,6 +22,11 @@
     left: 0;
     background: rgba(0, 0, 0, 0.7);
     z-index: 9999;
+}
+.overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .block1{
     background-color: #f1511b;
@@ -77,4 +83,40 @@
     height: 33px;
     background-color: #CC0000;
     border-radius: 50%;
+}
+.progress-container {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    overflow: hidden;
+}
+.progress-bg, .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bg {
+    background-color: lightgray;
+    color: black;
+}
+.progress-bar {
+    background-color: red;
+    color: white;
+    overflow: hidden;
+    z-index: 2;
+}
+.progress-bar span {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    text-align: center;
 }

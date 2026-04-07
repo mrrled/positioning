@@ -17,12 +17,21 @@
             <div class="block4"></div>
         </section>
     </div>
-    <button onclick="open()">Открыть модальное окно</button>
+    <button onclick="openWindow()">Открыть модальное окно</button>
     <div class="overlay">
         <div class="lightbox">
             Content
-            <div>Content</div>
-            <button class="lightbox-close">X</button>
+            <div class="progress-container">
+                <div class="progress-bg">
+                    <span>Loading...</span>
+                </div>
+
+                <div class="progress-bar">
+                    <span>Loading...</span>
+                </div>
+            </div>
+            <button class="lightbox-close" onclick="closeWindow()">X</button>
+
         </div>
     </div>
     <script src="index.js"></script>
