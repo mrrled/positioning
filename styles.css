@@ -1,0 +1,25 @@
+.target-logo {
+    width: 100px;
+    height: 100px;
+    background-color: #CC0000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.target-logo::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+.target-logo::after {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    background-color: #CC0000;
+    border-radius: 50%;
+}
