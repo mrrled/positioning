@@ -1,3 +1,34 @@
+.block1{
+    background-color: #f1511b;
+    height:100px;
+    width:100px;
+}
+.block2{
+    background-color: #80cc28;
+    height:100px;
+    width:100px;
+}
+.block3{
+    background-color: #00adef;
+    height:100px;
+    width:100px;
+}
+.block4{
+    background-color: #fbbc09;
+    height:100px;
+    width:100px;
+}
+.wrapper {
+    display: flex;
+    gap:10px;
+}
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin: 30px 20px;
+    padding: 15px;
+}
 .target-logo {
     width: 100px;
     height: 100px;
