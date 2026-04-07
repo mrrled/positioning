@@ -7,6 +7,8 @@
     margin: auto auto;
     text-align: center;
     background-color: white;
+    gap: 10px;
+    padding: 10px;
 }
 .lightbox-close{
     position: absolute;
@@ -119,4 +121,35 @@
     position: absolute;
     left: 0;
     text-align: center;
+}
+
+.tab input, .tab-content { display: none; }
+.tab {
+    border: 1px solid #00adef;
+    border-radius: 3px;
+    color: #848994;
+    margin-bottom: 10px;
+}
+.tab-title {
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+.tab-title::after {
+    content: '+';
+    float: right;
+}
+.tab-content {
+    padding: 10px 20px;
+}
+.tab :checked + .tab-title {
+    background-color: #50a2de;
+    border-radius: 3px;
+    color: #fff;
+}
+.tab :checked + .tab-title::after {
+    content: '−';
+}
+.tab :checked ~ .tab-content {
+    display: block;
 }
